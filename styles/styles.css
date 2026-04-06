@@ -82,7 +82,8 @@ html{
 * ,*:before, *:after {
     box-sizing: inherit;
 }
-
+/* ================== */
+/* navbar */
 .navbar__title{
     margin: 0;
     padding: 12px;
@@ -93,25 +94,74 @@ html{
 
 .navbar__subtitle{
 font-size: var(--fs-xs);
+color: var(--gray-800);
+}
+.navbar{
+    background-color: var(--primary-800);
+}
 
+.navbar__list{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    color: var(--white);
+}
+
+.navbar__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+     color: var(--white);
+     padding: 4px 0;
+}
+
+@media (width > 768px){
+
+    .navbar__list{
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    }
+
+
+    .navbar__link:hover {
+        color: var(--secundary-300)
+    }
+
+}
 
 body{
     font-size: 1.6rem;
+    font-family: var(--main-font);
 }
+/* firt mobile */
 
+
+
+
+
+/* ============================== */
 /* Header */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header{
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+
+
+
