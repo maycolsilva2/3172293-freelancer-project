@@ -1,7 +1,71 @@
-.cards-container{
+.services__cards-container{
     display: grid;
     justify-content: center;
-    border: solid red;
-    z-index: 100;
-    height: 300px;
+    margin: 0 24px;
+    row-gap: 24px;
 }    
+
+/* media query, cuando la pantalla sea mayor a 769px */
+@media (width > 769px){
+    .services__cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* media query, cuando la pantalla sea mayor a 1025px */
+@media (width > 1025px){
+    .services__cards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* =============================================
+=======================Cards==================== */
+
+
+.card{
+    text-align: center;
+    border: 1px solid var(--tertiary-950);
+    border-radius: 4px;
+    padding: 0 16px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.8);
+}
+
+/* =============================================
+=======================Íconos==================== */
+.card_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.card__icon--main{
+    height: 56px;
+    width: 56px;
+    
+}
+
+.card__icon--secundary{
+    height: 36px;
+    width: 36px;
+}
+
+
+/* =============================================
+=======================Breakpoints==================== */
+
+/* 
+    sm 640PX Telefonos grandes  
+    md 768px tablets
+    lg1024px laptops
+    xl 1280px escritorio
+    2xl 1536px pantallas grandes 
+
+*/

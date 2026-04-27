@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="styles/components/navbar.css">
     <link rel="stylesheet" href="styles/components/hero.css">
     <link rel="stylesheet" href="styles/components/card.css">
+    <link rel="stylesheet" href="styles/components/contact-form.css">
 
     <script type="module">
         import {loadCards} from "/js/components/card.js";
-        loadCards (".cards-container"); //sin Ids muestra todas las cards
+        loadCards (".services__cards-container"); //sin Ids muestra todas las cards
     </script>
 </head>
 <body>
@@ -26,10 +27,23 @@
 
     <div class="navbar-container"> </div>
     <div class="hero-container"> </div> 
-    <div class="cards-container"> </div> <!-- contenedor de las cartas -->
+    
+    
+    <main class="services">
+        <h2 class="services__title">Mis servicios</h2>
+        <div class="services__cards-container"> </div> <!-- contenedor de las cartas -->
+        <h2 class="services__contact-title">Contacto</h2>
+        <div class="services__form-container"></div>  <!--contenedor del formulario-->
+   </main>
+
+
+   <footer>
+    <p class="footer">@2026 by RicoProgramar. todos los derechos reservados</p>
+   </footer>
 
     <script src="/js/components/navbar.js"></script>
     <script src="/js/components/hero.js"></script>
     <!-- <script src="/js/components/card.js"></script> -->
+    <script src="/js/components/contact-form.js"></script>
 </body>
 </html>
